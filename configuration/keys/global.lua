@@ -93,16 +93,16 @@ local globalKeys =
     {description = 'Mark an area and screenshot it 10 seconds later (clipboard)', group = 'screenshots (clipboard)'}
   ),
   awful.key(
-    {},
-    'Print',
+    {modkey},
+    'p',
     function()
       awful.util.spawn_with_shell(apps.default.screenshot)
     end,
     {description = 'Take a screenshot of your active monitor and copy it to clipboard', group = 'screenshots (clipboard)'}
   ),
   awful.key(
-    {'Control'},
-    'Print',
+    {altkey, 'Shift'},
+    'p',
     function()
       awful.util.spawn_with_shell(apps.default.region_screenshot)
     end,
@@ -355,12 +355,45 @@ local globalKeys =
       awful.util.spawn_with_shell('vm-attach attach')
     end
   ),
-  -- Emoji picker
+  -- Lutris hotkey
+  awful.key(
+    {modkey},
+    'g',
+    function()
+      awful.util.spawn_with_shell('lutris')
+    end
+  ),
+  -- System Monitor hotkey
+  awful.key(
+    {modkey},
+    'm',
+    function()
+      awful.util.spawn_with_shell('mate-system-monitor')
+    end
+  ),
+  -- Kill VLC
+  awful.key(
+    {modkey},
+    'v',
+    function()
+      awful.util.spawn_with_shell('killall -9 vlc')
+    end
+  ),
+  -- File Manager
   awful.key(
     {modkey},
     'e',
     function()
       awful.util.spawn(apps.default.files)
+    end,
+    {description = 'filebrowser', group = 'hotkeys'}
+  ),
+  -- Emoji Picker
+  awful.key(
+    {modkey},
+    'a',
+    function()
+      awful.util.spawn_with_shell('ibus emoji')
     end,
     {description = 'Open the ibus emoji picker to copy an emoji to your clipboard', group = 'hotkeys'}
   )
