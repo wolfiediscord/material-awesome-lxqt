@@ -18,16 +18,16 @@ An almost desktop environment made with [AwesomeWM](https://awesomewm.org/) foll
 ### Note: the best transition is from gnome to material-awesome as KDE-plasma can break some indicators until plasma is purged entierly.
 
 ### 1) Get all the dependencies
-- [AwesomeWM](https://awesomewm.org/) as the window manager
-- [Roboto](https://fonts.google.com/specimen/Roboto) as the **font**
-- [Rofi](https://github.com/DaveDavenport/rofi) for the app launcher
-- [Compton fork](https://github.com/tryone144/compton) for the compositor (blur and animations)
-- [i3lock-fancy](https://github.com/meskarune/i3lock-fancy) the lockscreen application
-- [xclip](https://github.com/astrand/xclip) for copying screenshots to clipboard
-- __gnome-keyring-daemon__ and a __policykit-agent__ (by default policykit-1-gnome is enabled)
-- (Optional) __qt5-styles-gtk2__ or __qt5-styles-plugins__ for making QT and KDE applications look the same as gnome applications
-- (Optional) [Materia](https://github.com/nana-4/materia-theme) as GTK theme
-- (Optional) [Papirus Dark](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) as icon theme
+- [AwesomeWM](https://awesomewm.org/) as the window manager - universal package install: awesome
+- [Roboto](https://fonts.google.com/specimen/Roboto) as the **font** - Debian: fonts-roboto Arch: ttf-roboto
+- [Rofi](https://github.com/DaveDavenport/rofi) for the app launcher - universal install: rofi
+- [Compton](https://github.com/tryone144/compton) for the compositor (blur and animations) universal install: compton
+- [i3lock](https://github.com/meskarune/i3lock-fancy) the lockscreen application Arch Install: i3lock Debian: i3lock-fancy
+- [xclip](https://github.com/astrand/xclip) for copying screenshots to clipboard package: xclip
+- __gnome-keyring__ and a __policykit-agent__ (by default policykit-1-gnome is enabled) OR mate-polkit
+- (Optional) __qt5-styles-gtk2__ or __qt5-styleplugins-git__ for making QT and KDE applications look the same as gnome applications debian: qt5-style-plugins
+- (Optional) [Materia](https://github.com/nana-4/materia-theme) as GTK theme - Arch Install: materia-theme debian: materia-gtk-theme
+- (Optional) [Papirus Dark](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) as icon theme Universal Install: wget -qO- https://git.io/papirus-icon-theme-install | sh
 - (Optional) [lxappearance](https://sourceforge.net/projects/lxde/files/LXAppearance/) to set up the gtk and icon theme
 - (Optional) [xbacklight](https://www.x.org/archive/X11R7.5/doc/man/man1/xbacklight.1.html) for adjusting brightness on laptops (disabled by default)
 - (Optional) [kde-spectacle](https://kde.org/applications/utilities/org.kde.spectacle) my personal screenshot utility of choice, can be replaced by whichever you want, just remember to edit the screenshot utility script
@@ -49,7 +49,7 @@ Start **lxappearance** to active the **icon** theme and **GTK** theme
 Note: for cursor theme, edit `~/.icons/default/index.theme` and `~/.config/gtk3-0/settings.ini`, for the change to also show up in applications run as root, copy the 2 files over to their respective place in `/root`.
 
 ### 4) Same theme for Qt/KDE applications and GTK applications, and fix missing indicators
-First install `qt5-style-plugins` (or `qt5-style-gtk2`) and add this to the bottom of your `/etc/environment`
+First install `qt5-style-plugins` or `qt5-style-gtk2` (debian) | `qt5-styleplugins` (arch) and add this to the bottom of your `/etc/environment`
 
 ```bash
 XDG_CURRENT_DESKTOP=Unity
