@@ -18,6 +18,13 @@ An almost desktop environment made with [AwesomeWM](https://awesomewm.org/) foll
 ### Note: the best transition is from gnome to material-awesome as KDE-plasma can break some indicators until plasma is purged entierly.
 
 ### 1) Get all the dependencies
+
+```
+sudo apt install awesome fonts-roboto rofi compton i3lock xclip qt5-style-plugins materia-gtk-theme lxappearance xbacklight kde-spectacle -y
+wget -qO- https://git.io/papirus-icon-theme-install | sh
+```
+
+Program list
 - [AwesomeWM](https://awesomewm.org/) as the window manager - universal package install: awesome
 - [Roboto](https://fonts.google.com/specimen/Roboto) as the **font** - Debian: fonts-roboto Arch: ttf-roboto
 - [Rofi](https://github.com/DaveDavenport/rofi) for the app launcher - universal install: rofi
@@ -36,12 +43,6 @@ An almost desktop environment made with [AwesomeWM](https://awesomewm.org/) foll
 
 ```
 git clone https://github.com/ChrisTitusTech/material-awesome.git ~/.config/awesome
-```
-
-> Awesome 4.3 is so new that most of the distributions have not updated it yet. If you want to install this config on Awesome 4.2 (current version on depo) use the specific awesome-4.2 branch (not in development by me)
-
-```
-git clone -b awesome-4.2 https://github.com/PapyElGringo/material-awesome.git ~/.config/awesome
 ```
 
 ### 3) Set the themes
