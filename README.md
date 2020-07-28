@@ -20,7 +20,7 @@ An almost desktop environment made with [AwesomeWM](https://awesomewm.org/) foll
 ### 1) Get all the dependencies
 
 ```
-sudo apt install awesome fonts-roboto rofi compton i3lock xclip qt5-style-plugins materia-gtk-theme lxappearance xbacklight kde-spectacle -y
+sudo apt install awesome fonts-roboto rofi compton i3lock xclip qt5-style-plugins materia-gtk-theme lxappearance xbacklight kde-spectacle nautilus xfce4-power-manager -y
 wget -qO- https://git.io/papirus-icon-theme-install | sh
 ```
 

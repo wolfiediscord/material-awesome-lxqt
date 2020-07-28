@@ -19,7 +19,7 @@ return {
     editor = 'gedit', -- gui text editor
     social = 'discord',
     game = rofi_command,
-    files = 'nemo',
+    files = 'nautilus',
     music = rofi_command 
   },
   -- List of apps to start once on start-up
@@ -32,7 +32,7 @@ return {
     'scream -u -p 4011 -i virbr1', -- scream audio sink
     'numlockx on', -- enable numlock
     '/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)', -- credential manager
-    'xscreensaver -nosplash', -- Power manager
+    'xfce4-power-manager', -- Power manager
      'flameshot',
      'synology-drive -minimized',
      'steam -silent',
