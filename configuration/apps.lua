@@ -12,9 +12,9 @@ return {
     rofi = rofi_command,
     lock = 'i3lock-fancy',
     quake = 'terminator',
-    screenshot = '~/.config/awesome/configuration/utils/screenshot -m',
-    region_screenshot = '~/.config/awesome/configuration/utils/screenshot -r',
-    delayed_screenshot = 'sleep 10 ; ~/.config/awesome/configuration/utils/screenshot -r',
+    screenshot = 'flameshot full -p ~/Pictures',
+    region_screenshot = 'flameshot gui -p ~/Pictures',
+    delayed_screenshot = 'flameshot full -p ~/Pictures -d 5000',
     browser = 'brave-nightly',
     editor = 'gedit', -- gui text editor
     social = 'discord',
