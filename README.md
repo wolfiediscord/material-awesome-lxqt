@@ -21,7 +21,7 @@ An almost desktop environment made with [AwesomeWM](https://awesomewm.org/) foll
 
 ```
 sudo add-apt-repository ppa:regolith-linux/unstable -y
-sudo apt install awesome fonts-roboto rofi picom xscreensaver qt5-style-plugins materia-gtk-theme lxappearance light flameshot pcmanfm-qt lxqt-powermanager pnmixer nm-applet lxqt-policykit -y
+sudo apt install awesome fonts-roboto rofi picom xscreensaver qt5-style-plugins materia-gtk-theme lxappearance light flameshot pcmanfm-qt lxqt-powermanager pnmixer nm-applet lxqt-policykit redshift-gtk -y
 wget -qO- https://git.io/papirus-icon-theme-install | sh
 ```
 
@@ -30,7 +30,7 @@ wget -qO- https://git.io/papirus-icon-theme-install | sh
 #### Arch-Based
 
 ```
-yay -S awesome rofi picom xscreensaver ttf-roboto lxqt-policykit materia-gtk-theme lxappearance flameshot pnmixer nm-applet lxqt-powermanager -y
+yay -S awesome rofi picom xscreensaver ttf-roboto lxqt-policykit materia-gtk-theme lxappearance flameshot pnmixer nm-applet lxqt-powermanager redshift-gtk -y
 wget -qO- https://git.io/papirus-icon-theme-install | sh
 ```
 
