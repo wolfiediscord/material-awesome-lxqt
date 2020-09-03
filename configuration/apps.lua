@@ -28,6 +28,7 @@ return {
     'pnmixer', -- shows an audiocontrol applet in systray when installed.
     --'blueberry-tray', -- Bluetooth tray icon
     -- 'numlockx on', -- enable numlock
+    'redshift-gtk',
     'lxqt-policykit-agent', -- credential manager
     'lxqt-powerermanagement', -- Power manager
     'slimbookbattery', -- tlp assistant
