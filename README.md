@@ -50,6 +50,7 @@ wget -qO- https://git.io/papirus-icon-theme-install | sh
 - [pnmixer](https://github.com/nicklan/pnmixer) Audio Tray icon that is in debian repositories and is easily installed on arch through AUR.
 - [nm-applet](https://github.com/palinek/nm-tray) nm-applet is a Network Manager Tray display using QT.
 - [lxqt-powermanagement](https://github.com/lxqt/lxqt-powermanagement) LXQT's power manager is excellent and a great way of dealing with sleep, monitor timeout, and other power management features.
+- [redshift-gtk](http://jonls.dk/redshift/) My perferred blue light reducer. Feel free to replace with your own, just make sure to edit the apps.lua file 
 
 ### 2) Clone the configuration
 
