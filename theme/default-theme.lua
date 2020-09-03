@@ -16,7 +16,7 @@ theme.primary = mat_colors.deep_orange
 theme.accent = mat_colors.pink
 
 -- Background
-theme.background = mat_colors.grey
+theme.background = mat_colors.black
 
 local awesome_overrides =
   function(theme)
