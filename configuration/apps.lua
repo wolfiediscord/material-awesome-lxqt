@@ -10,12 +10,12 @@ return {
   default = {
     terminal = 'terminator',
     rofi = rofi_command,
-    lock = 'xscreensaver-command -lock',
+    lock = 'xscreensaver-command --lock',
     quake = 'terminator',
     screenshot = 'flameshot full -p ~/Pictures',
     region_screenshot = 'flameshot gui -p ~/Pictures',
     delayed_screenshot = 'flameshot full -p ~/Pictures -d 5000',
-    browser = 'firefox',
+    browser = 'firefox-esr', -- using firefox-esr because new firefox sucks as of 9/10/2020
     editor = 'featherpad', -- gui text editor
     social = 'discord',
     game = rofi_command,
@@ -30,7 +30,7 @@ return {
     -- 'numlockx on', -- enable numlock
     'redshift-gtk',
     'lxqt-policykit-agent', -- credential manager
-    'lxqt-powerermanagement', -- Power manager
+    'lxqt-powermanagement', -- Power manager
     'slimbookbattery', -- tlp assistant
     'compton', -- transparency
     'xinput set-prop "appletouch" "libinput Tapping Enabled" 1', --add tap to click functionality
