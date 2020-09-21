@@ -15,7 +15,7 @@ return {
     screenshot = 'flameshot full -p ~/Pictures',
     region_screenshot = 'flameshot gui -p ~/Pictures',
     delayed_screenshot = 'flameshot full -p ~/Pictures -d 5000',
-    browser = 'firefox-esr', -- using firefox-esr because new firefox sucks as of 9/10/2020
+    browser = 'brave-browser',
     editor = 'featherpad', -- gui text editor
     social = 'discord',
     game = rofi_command,
